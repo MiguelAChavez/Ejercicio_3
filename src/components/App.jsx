@@ -16,7 +16,6 @@ function App() {
             price: 25.99,
             description: des,
             stock: 50,
-            unit: "ud",
             SKU: "CAM-432-354",
           }}
         ></ProductDetail>
