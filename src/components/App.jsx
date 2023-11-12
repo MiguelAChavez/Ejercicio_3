@@ -1,5 +1,6 @@
 import "./App.css";
-import ProductDetail from "./ProductDetail";
+import ProductDetail from "./ProductDetail/ProductDetail";
+import data from "../Data";
 
 function App() {
   let des =
@@ -19,6 +20,10 @@ function App() {
             SKU: "CAM-432-354",
           }}
         ></ProductDetail>
+
+        {/* {data.map((product, index) => (
+          <ProductDetail key={index} product={product}></ProductDetail>
+        ))} */}
       </main>
     </>
   );

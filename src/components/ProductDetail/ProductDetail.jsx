@@ -1,17 +1,9 @@
 import "./ProductDetail.css";
+
 import PropTypes from "prop-types";
 
-ProductDetail.propTypes = {
-  product: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string,
-    price: PropTypes.number,
-    stock: PropTypes.number,
-    SKU: PropTypes.string.isRequired,
-  }),
-};
-
 function ProductDetail({ product }) {
+  console.log(product);
   return (
     <section className="card">
       <article className="left-column">
@@ -30,5 +22,15 @@ function ProductDetail({ product }) {
     </section>
   );
 }
+
+ProductDetail.propTypes = {
+  product: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    price: PropTypes.number,
+    stock: PropTypes.number,
+    SKU: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default ProductDetail;
