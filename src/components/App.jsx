@@ -21,9 +21,9 @@ function App() {
           }}
         ></ProductDetail>
 
-        {/* {data.map((product, index) => (
+        {{data.map((product, index) => (
           <ProductDetail key={index} product={product}></ProductDetail>
-        ))} */}
+        ))} }
       </main>
     </>
   );
